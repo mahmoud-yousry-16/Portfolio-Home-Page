@@ -1,0 +1,12 @@
+@media screen and (max-width: 767px) {
+    body {
+        max-width: 767px;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+    body {
+        max-width: 480px;
+        min-width: 320px;
+    }
+}
