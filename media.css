@@ -1,7 +1,6 @@
 @media screen and (max-width: 767px) {
     body {
         max-width: 767px;
-        margin: 0 0 -200px 0;
     }
 }
 
@@ -9,7 +8,7 @@
     body {
         max-width: 480px;
         min-width: 320px;
-        margin: 0 0 -200px 0;
     }
 
 }
+
