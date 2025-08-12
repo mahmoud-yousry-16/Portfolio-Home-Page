@@ -5,17 +5,6 @@
     font-family: poppins;
 }
 
-html, body {
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    min-height: 100dvh;
-    display: flex;
-    align-items: center;
-}
-
 a {
     color: #fff;
     text-decoration: none;
@@ -186,4 +175,5 @@ a {
     object-fit: cover;
 
 }
+
 
