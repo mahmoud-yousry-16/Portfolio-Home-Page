@@ -5,6 +5,10 @@
     font-family: poppins;
 }
 
+body {
+    min-height: 100dvh;
+}
+
 a {
     color: #fff;
     text-decoration: none;
@@ -173,4 +177,5 @@ a {
     width: 170%;
     padding: 30px 0 0 30px;
     object-fit: cover;
+
 }
