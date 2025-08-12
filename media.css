@@ -1,7 +1,7 @@
 @media screen and (max-width: 767px) {
     body {
         max-width: 767px;
-        min-height: 100dvh;
+        height: 100dvh;
     }
 }
 
@@ -9,9 +9,10 @@
     body {
         max-width: 480px;
         min-width: 320px;
-        min-height: 100dvh;
+        height: 100dvh;
     }
 
 }
+
 
 
