@@ -1,7 +1,8 @@
 @media screen and (max-width: 767px) {
     body {
         max-width: 767px;
-        height: 100%;
+        max-height: 800px;
+        min-height: 640px;
     }
 }
 
@@ -9,10 +10,12 @@
     body {
         max-width: 480px;
         min-width: 320px;
-        height: 100%;
+        max-height: 800px;
+        min-height: 640px;
     }
 
 }
+
 
 
 
