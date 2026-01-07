@@ -3,61 +3,197 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Mahmoud Yousry - Frontend Developer</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="css/all.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
 </head>
 <body>
-    <nav class="navbar">
-        <a class="logo" href="#">Portfolio.</a>
-        <ul>
-            <li><a class="home-active" href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">Service</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
+    <!-- Navigation -->
+    <nav>
+        <div class="container">
+            <div class="logo">MY</div>
+            <ul class="nav-links">
+                <li><a href="#home" data-en="Home" data-ar="الرئيسية">Home</a></li>
+                <li><a href="#about" data-en="About" data-ar="عنّي">About</a></li>
+                <li><a href="#skills" data-en="Skills" data-ar="المهارات">Skills</a></li>
+                <li><a href="#projects" data-en="Projects" data-ar="المشاريع">Projects</a></li>
+                <li><a href="#contact" data-en="Contact" data-ar="تواصل">Contact</a></li>
+            </ul>
+            <button class="lang-toggle" onclick="toggleLanguage()">AR/EN</button>
+        </div>
     </nav>
 
-    <div class="bars-animation">
-        <div class="bar" style="--i:6;"></div>
-        <div class="bar" style="--i:5;"></div>
-        <div class="bar" style="--i:4;"></div>
-        <div class="bar" style="--i:3;"></div>
-        <div class="bar" style="--i:2;"></div>
-        <div class="bar" style="--i:1;"></div>
-    </div>
-
-    <section class="home">
-        <div class="l-part">
-            <h1>Mahmoud Yousry</h1>
-            <h2>I'am a <strong>Frontend Developer</strong></h2>
-            <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio cum enim atque officiis, reiciendis, eum doloremque, ut molestiae sunt nihil et eaque neque molestias ullam laudantium fugit nam repellendus amet?
-            </p>
-            <div class="btn-sci">
-                <a href="#" class="btn">Download CV</a>
-                <div class="sci">
-                    <a href="https://github.com/mahmoud-yousry-16" target="_blank"><i class="fa-brands fa-github github"></i></a>
-                    <a href="https://www.linkedin.com/in/mahmoud-yousry-turkey" target="_blank"><i class="fa-brands fa-linkedin linkedin"></i></a>
-                    <a href="https://www.facebook.com/share/1AuyAnquoL/" target="_blank"><i class="fa-brands fa-facebook facebook"></i></a>
-                    <a href="https://www.instagram.com/mahmoud_yousry699/" target="_blank"><i class="fa-brands fa-instagram instagram"></i></a>
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 data-en="Mahmoud Yousry" data-ar="محمود يسري">Mahmoud Yousry</h1>
+                <p class="title" data-en="Frontend React Developer" data-ar="مطور واجهات أمامية - React">Frontend React Developer</p>
+                <p data-en="1 year of experience crafting beautiful, responsive, and user-friendly web applications with attention to detail and professional quality." data-ar="سنة خبرة في بناء تطبيقات ويب جميلة ومتجاوبة مع جميع الأجهزة، مع الاهتمام بالتفاصيل والجودة الاحترافية.">
+                    1 year of experience crafting beautiful, responsive, and user-friendly web applications with attention to detail and professional quality.
+                </p>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/mahmoud-yousry-turkey" target="_blank">in</a>
+                    <a href="https://github.com/mahmoud-yousry-16" target="_blank">GH</a>
                 </div>
+                <a href="#contact" class="cta-button" data-en="Get In Touch" data-ar="تواصل معي">Get In Touch</a>
+            </div>
+            <div class="hero-image">
+                <div class="image-placeholder"><img src="image.jpg" alt="personal image"></div>
             </div>
         </div>
-        <div class="r-part">
-            <div class="img-box">
-                <div class="img-item">
-                    <img src="img.png" alt="">
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2 class="section-title" data-en="About Me" data-ar="عنّي">About Me</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p data-en="I'm a passionate Frontend React Developer with 1 year of hands-on experience. I specialize in creating modern, responsive web applications that provide excellent user experiences." data-ar="أنا مطور واجهات أمامية متحمس مع سنة من الخبرة العملية. متخصص في إنشاء تطبيقات ويب عصرية ومتجاوبة توفر تجربة مستخدم ممتازة.">
+                    I'm a passionate Frontend React Developer with 1 year of hands-on experience. I specialize in creating modern, responsive web applications that provide excellent user experiences.
+                </p>
+                <p data-en="I work efficiently under pressure, pay close attention to details, and deliver professional results. Certified by DEPI initiative, I'm committed to continuous learning and growth in web development." data-ar="أعمل بكفاءة تحت الضغط، وأهتم بالتفاصيل، وأقدم نتائج احترافية. حاصل على شهادة من مبادرة DEPI، وملتزم بالتعلم المستمر والنمو في مجال تطوير الويب.">
+                    I work efficiently under pressure, pay close attention to details, and deliver professional results. Certified by DEPI initiative, I'm committed to continuous learning and growth in web development.
+                </p>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <div style="font-size: 2rem;">⚡</div>
+                    <p data-en="Fast Learner" data-ar="سريع التعلم">Fast Learner</p>
+                </div>
+                <div class="skill-item">
+                    <div style="font-size: 2rem;">🎯</div>
+                    <p data-en="Detail Oriented" data-ar="دقيق في التفاصيل">Detail Oriented</p>
+                </div>
+                <div class="skill-item">
+                    <div style="font-size: 2rem;">💪</div>
+                    <p data-en="Works Under Pressure" data-ar="يعمل تحت الضغط">Works Under Pressure</p>
+                </div>
+                <div class="skill-item">
+                    <div style="font-size: 2rem;">🏆</div>
+                    <p data-en="DEPI Certified" data-ar="شهادة DEPI">DEPI Certified</p>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2 class="section-title" data-en="Technical Skills" data-ar="المهارات التقنية">Technical Skills</h2>
+        <div class="skills-list">
+            <div class="skill-card">
+                <div class="skill-icon">⚛️</div>
+                <h3>React</h3>
+                <p data-en="Building dynamic and interactive user interfaces" data-ar="بناء واجهات مستخدم ديناميكية وتفاعلية">Building dynamic and interactive user interfaces</p>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">📜</div>
+                <h3>JavaScript</h3>
+                <p data-en="Modern ES6+ features and best practices" data-ar="ميزات ES6+ الحديثة وأفضل الممارسات">Modern ES6+ features and best practices</p>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">🎨</div>
+                <h3>HTML & CSS</h3>
+                <p data-en="Semantic markup and responsive design" data-ar="ترميز دلالي وتصميم متجاوب">Semantic markup and responsive design</p>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">📱</div>
+                <h3>Responsive Design</h3>
+                <p data-en="Mobile-first approach for all devices" data-ar="نهج Mobile-first لجميع الأجهزة">Mobile-first approach for all devices</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2 class="section-title" data-en="My Projects" data-ar="مشاريعي">My Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-image">🔐</div>
+                <div class="project-info">
+                    <h3 data-en="Login Form" data-ar="فورم تسجيل الدخول">Login Form</h3>
+                    <p data-en="A beautiful and user-friendly login form with modern design and smooth animations." data-ar="فورم تسجيل دخول جميل وسهل الاستخدام مع تصميم عصري وحركات سلسة.">
+                        A beautiful and user-friendly login form with modern design and smooth animations.
+                    </p>
+                    <div class="project-links">
+                        <a href="#" class="project-link" data-en="Live Demo" data-ar="عرض حي">Live Demo</a>
+                        <a href="https://github.com/mahmoud-yousry-16" target="_blank" class="project-link" data-en="Code" data-ar="الكود">Code</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">🥖</div>
+                <div class="project-info">
+                    <h3 data-en="Bakery Website" data-ar="موقع مخبوزات">Bakery Website</h3>
+                    <p data-en="A mini e-commerce website for bakery products with clean design and easy navigation." data-ar="موقع تجارة إلكترونية مصغر للمخبوزات مع تصميم نظيف وتنقل سهل.">
+                        A mini e-commerce website for bakery products with clean design and easy navigation.
+                    </p>
+                    <div class="project-links">
+                        <a href="#" class="project-link" data-en="Live Demo" data-ar="عرض حي">Live Demo</a>
+                        <a href="https://github.com/mahmoud-yousry-16" target="_blank" class="project-link" data-en="Code" data-ar="الكود">Code</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">👟</div>
+                <div class="project-info">
+                    <h3 data-en="Shoes Store" data-ar="متجر أحذية">Shoes Store</h3>
+                    <p data-en="An attractive online shoe store showcasing products with modern UI/UX principles." data-ar="متجر أحذية أونلاين جذاب يعرض المنتجات بمبادئ UI/UX حديثة.">
+                        An attractive online shoe store showcasing products with modern UI/UX principles.
+                    </p>
+                    <div class="project-links">
+                        <a href="#" class="project-link" data-en="Live Demo" data-ar="عرض حي">Live Demo</a>
+                        <a href="https://github.com/mahmoud-yousry-16" target="_blank" class="project-link" data-en="Code" data-ar="الكود">Code</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">💐</div>
+                <div class="project-info">
+                    <h3 data-en="Perfume Store" data-ar="متجر عطور">Perfume Store</h3>
+                    <p data-en="A complete e-commerce website for perfumes with elegant design and full functionality." data-ar="موقع تجارة إلكترونية كامل للعطور مع تصميم أنيق ووظائف كاملة.">
+                        A complete e-commerce website for perfumes with elegant design and full functionality.
+                    </p>
+                    <div class="project-links">
+                        <a href="#" class="project-link" data-en="Live Demo" data-ar="عرض حي">Live Demo</a>
+                        <a href="https://github.com/mahmoud-yousry-16" target="_blank" class="project-link" data-en="Code" data-ar="الكود">Code</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2 class="section-title" data-en="Get In Touch" data-ar="تواصل معي">Get In Touch</h2>
+        <div class="contact-content">
+            <p data-en="I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision." data-ar="أنا دائماً منفتح لمناقشة المشاريع الجديدة، الأفكار الإبداعية، أو الفرص لأكون جزءاً من رؤيتك.">
+                I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.
+            </p>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <h3>LinkedIn</h3>
+                    <a href="https://www.linkedin.com/in/mahmoud-yousry-turkey" target="_blank" style="color: var(--primary-color); text-decoration: none;">linkedin.com/in/mahmoud-yousry-turkey</a>
+                </div>
+                <div class="contact-item">
+                    <h3>Whatsapp</h3>
+                    <a href="https://wa.me/01121097589" target="_blank" style="color: var(--primary-color); text-decoration: none;">+201121097589</a>
+                </div>
+                <div class="contact-item">
+                    <h3>Gmail</h3>
+                    <a href="mailto:myousry1635@gmail.com" style="color: var(--primary-color); text-decoration: none;">myousry1635@gmail.com</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p data-en="© 2026 Mahmoud Yousry. Built with passion and code." data-ar="© 2026 محمود يسري. بُني بشغف وكود.">© 2026 Mahmoud Yousry. Built with passion and code.</p>
+    </footer>
+
+
+    <script src="script.js"></script>
+
 </body>
-
 </html>
-
-
